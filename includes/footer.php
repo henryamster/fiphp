@@ -14,4 +14,6 @@
     </div>
      <script src="js/menuCollapse.js"></script>
 </footer>
-
+    </body>
+    </html>
+</html>
