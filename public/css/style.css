@@ -5,6 +5,7 @@ html,
 body,
 ul,
 ol {
+    font-size:18px;
     margin:  0;
     padding: 0;
 }
@@ -21,6 +22,24 @@ h3{
 .customFont{ font-family: 'The Girl Next Door', cursive;}
 .decorFont{ font-family: 'Acme', sans-serif;}
 .font{ font-family: 'Questrial', serif;}
+/*link overrides*/
+    a{
+    color:white;
+    text-decoration: none;
+}
+a:visited{
+    color:yellow;
+
+}
+a li:hover{
+    background:rgba(255,255,255,0.6);
+    box-shadow:2px 2px grey;
+}
+a li:active{
+    background:rgba(211,144,0,0.3);
+    box-shadow:2px 2px grey;
+}
+
 /*colors */
 .color-primary-0{ color:  #BBF138;}	
 .color-primary-1{ color:  #B6FF00;}
@@ -46,8 +65,10 @@ h3{
 .color-complement-3{ color:  #960704;}
 .color-complement-4{ color:  #6E0300;}
 /* Header Styles */
+
 /*logo*/
 #mainNav #logo{
+    text-shadow:1px 1px grey;
     margin-right:200px;
     font-size:1.5em;
     color:  #FFE400;
@@ -56,6 +77,7 @@ h3{
     margin:5px;
     padding-left:40px;
     padding-right:200px;
+    font-weight: 800;
 }   
 /*div container for nav*/
 .mainNav{
@@ -72,23 +94,84 @@ h3{
     background:#105C00;
     height:auto;
     font-size: 18px;
+    position:relative;
 }
 /*individual lis from nav ul*/
 #mainNav li{
     font-family: 'Questrial', serif;
     color:whitesmoke;
-    padding:5px;
+    padding:4px;
     margin-right:25px;
     margin:13px;
     height:20px;
     border-radius: 10px;
 }
-/*dropdown inital state*/
+/*dropdown div inital state*/
 .dropDown{
     display:none;
+    position:absolute;
+    min-width: 80px;
+    z-index: 1;
+    left:0;
+
+}
+/*uls with hover state menus*/
+.dropper{
+    background-color: rgba(255,255,255,0.6);
+    position: relative;
+    display: inline-block;
+   }
+/*  rounded corner for leftmost ul*/
+.dropDown:first-of-type{
+    border-bottom-left-radius: 25px;
+}
+/*  rounded corner for rightmost ul*/
+.dropDown:last-of-type{
+    border-bottom-right-radius: 25px;
+}
+/*hover state activation of dropDown content*/
+.dropper:hover .dropDown{
+    display:flex;
+    background-color: seagreen;
+    padding:12px;
+}
+/*hover state highlighting*/
+.dropper:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+.dropDown li:hover{
+     background-color: rgba(255,255,255,0.6);
+}
+#hideableMenu{
+    display: flex;
+    flex-direction: row;
+}
+#menu{
+    display:none;
+}
+/*END of Header Styles*/
+
+/*Footer Styles*/
+
+.footerContainer{
+    display:flex;
+    flex-direction: row;
+    background-color:#105C00;
+    padding:24px;
+    font-family: 'The Girl Next Door', cursive;
+    color:whitesmoke;
+    font-size: 1.4em;
+}
+.footerContainer ul{
+    list-style: none;
+    width:49%;
 }
 
-
+.logo{
+    color:yellow;
+    font-size: 1.3em;
+    font-weight: 800;
+}
 /*bogus styles*/
 .handle{
     color:rgb(81, 152, 57);   
@@ -99,8 +182,72 @@ h3{
     font-family: 'Acme', sans-serif;
 }
 
-.dropper{
-    background-color: rgba(255,255,255,.18);
+@media screen and (max-width: 880px){
+    /*HEADER STYLES for media Q*/
+   
+    #mainNav{
+        display:block;
+        font-size: 1em;
+        
+    }
+    .dropDown{
+       
+        left:50px;
+        right:auto;
+        border:2px solid white;
+    }
+  #mainNav #logo{
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    #mainNav li{
+        margin:4px;
+    }
+    .dropper{
+        display:flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .dropper:hover .dropDown{
+        padding:4px;
+    }
+    .dropDown:first-of-type{
+    border-top-left-radius: 25px;
+}
+.dropDown:last-of-type{
+    border-top-right-radius: 25px;
+}
+/*END OF HEADER STYLES FOR M QUERY*/
 
-
+/*BEGINNING OF FOOTER STYLES FOR M QUERY*/
+.footerContainer{
+    font-size:.8em;
+    flex-direction: column;
+}
+#menu{
+    font-size: 1.4em;
+    display:block;
+    position:absolute;
+    top:12px;
+    right:12px;
+    background:yellow;
+    z-index: 2;
+    border:0;
+    color:white;
+    padding:4px;
+    border-radius: 12px;
+    box-shadow: 1px 1px grey;
+}
+#menu:hover{
+    background-color: white;
+    color:black;
+}
+#menu:active{
+    color:white;
+    background-color: black;
+}
+#hideableMenu{
+    flex-direction: column;
+}
 }

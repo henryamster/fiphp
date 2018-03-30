@@ -1,8 +1,17 @@
-<?php
+<footer>
+    <div class="footerContainer">
+        <ul>
+            <li class="logo">Fresh&nbsp;Inventory</li>
+            <li>Henry&nbsp;Fritz Design&nbsp;&&nbsp;Development</li>
+            <li><a href="mailto:henryamsterfritz@gmail.com">henryamsterfritz@gmail.com</a></li>
+        </ul>
+        <ul>
+            <li>About</li>
+            <li>Github</li>
+          
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+        </ul>
+    </div>
+     <script src="js/menuCollapse.js"></script>
+</footer>
 
