@@ -1,0 +1,106 @@
+
+
+/*reset*/
+html,
+body,
+ul,
+ol {
+    margin:  0;
+    padding: 0;
+}
+h1{
+    font-size:3em;
+}
+h2{
+    font-size:2.4em;
+}
+h3{
+    font-size:2em;
+}
+/*fonts */
+.customFont{ font-family: 'The Girl Next Door', cursive;}
+.decorFont{ font-family: 'Acme', sans-serif;}
+.font{ font-family: 'Questrial', serif;}
+/*colors */
+.color-primary-0{ color:  #BBF138;}	
+.color-primary-1{ color:  #B6FF00;}
+.color-primary-2{ color:  #8AC200;}
+.color-primary-3{ color:  #668E03;}
+.color-primary-4{ color:  #4A6800;}
+
+.color-secondary-1-0{ color:  #4ED632;}	
+.color-secondary-1-1{ color:  #2CFF00;}
+.color-secondary-1-2{ color:  #1EAC00;}
+.color-secondary-1-3{ color:  #187D03;}
+.color-secondary-1-4{ color:  #105C00;}
+
+.color-secondary-2-0{ color:  #FFEA3B;}	
+.color-secondary-2-1{ color:  #FFE400;}
+.color-secondary-2-2{ color:  #CEB800;}
+.color-secondary-2-3{ color:  #968704;}
+.color-secondary-2-4{ color:  #6E6300;}
+
+.color-complement-0{ color:  #FF403B;}	
+.color-complement-1{ color:  #FF0700;}
+.color-complement-2{ color:  #CE0500;}
+.color-complement-3{ color:  #960704;}
+.color-complement-4{ color:  #6E0300;}
+/* Header Styles */
+/*logo*/
+#mainNav #logo{
+    margin-right:200px;
+    font-size:1.5em;
+    color:  #FFE400;
+    padding: 0;
+    font-family: 'The Girl Next Door', cursive;
+    margin:5px;
+    padding-left:40px;
+    padding-right:200px;
+}   
+/*div container for nav*/
+.mainNav{
+    width:100vw;
+    color:green;
+    font-size:1.2em;
+}
+/*nav ul*/
+#mainNav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    background:#105C00;
+    height:auto;
+    font-size: 18px;
+}
+/*individual lis from nav ul*/
+#mainNav li{
+    font-family: 'Questrial', serif;
+    color:whitesmoke;
+    padding:5px;
+    margin-right:25px;
+    margin:13px;
+    height:20px;
+    border-radius: 10px;
+}
+/*dropdown inital state*/
+.dropDown{
+    display:none;
+}
+
+
+/*bogus styles*/
+.handle{
+    color:rgb(81, 152, 57);   
+    font-family: 'The Girl Next Door', cursive;
+}
+.username{
+    color: antiquewhite;
+    font-family: 'Acme', sans-serif;
+}
+
+.dropper{
+    background-color: rgba(255,255,255,.18);
+
+
+}
