@@ -1,20 +1,7 @@
-<!--?php require_once("../includes/functions.php");?-->
-<?php include("../includes/header.php");?>
+ <?php
 
-
-            <ul>
-                <?php
-                $user = 'root';
-                $password = 'root';
-                $db = 'djk';
-                $host = 'localhost';
-                $port = 3306;
-
-                $link = mysqli_init();
-                $success = mysqli_real_connect(
-                        $link, $host, $user, $password, $db, $port
-                );
-                echo $success;
+                
+             
 
                 $query = "SELECT * FROM users";
                 $result = mysqli_query($link, $query);
@@ -29,7 +16,11 @@
                     die('died');
                 }
                 ?>
-            </ul>
+                
+<?php require_once("../includes/functions.php");?>
+<?php include("../includes/header.php");?>
+
+
 
             <?php include("../includes/footer.php");?>
     

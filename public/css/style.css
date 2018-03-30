@@ -33,11 +33,11 @@ a:visited{
 }
 a li:hover{
     background:rgba(255,255,255,0.6);
-    box-shadow:2px 2px grey;
+    box-shadow:2px 2px black;
 }
 a li:active{
     background:rgba(211,144,0,0.3);
-    box-shadow:2px 2px grey;
+    box-shadow:2px 2px black;
 }
 
 /*colors */
@@ -68,7 +68,7 @@ a li:active{
 
 /*logo*/
 #mainNav #logo{
-    text-shadow:1px 1px grey;
+    text-shadow:1px 1px black;
     margin-right:200px;
     font-size:1.5em;
     color:  #FFE400;
@@ -189,17 +189,21 @@ a li:active{
 }
 .panel{
     font-family: 'Questrial', serif;
-    border: 21px solid grey;
+    border: 11px solid green;
     margin:20px 0 20px 0;
      padding: 12px;
+    font-size: 1.6em;
+      border-radius: 25px;
 }
 .landing{
    
     text-align: center;
 }
 .landing img{
-    width: 80%;
+    width: 100%;
     height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 .development{
     
@@ -255,7 +259,7 @@ a li:active{
     color:white;
     padding:4px;
     border-radius: 12px;
-    box-shadow: 1px 1px grey;
+    box-shadow: 1px 1px black;
 }
 #menu:hover{
     background-color: white;
@@ -286,11 +290,16 @@ a li:active{
     height:auto;
     margin:0;
     padding:0;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    box-shadow: 0px 12px black;
 }
     .panel{
         margin: 0 0 10px 0;
        padding: 0;
-        border:14px solid grey;
+        border:8px solid green;
+        font-size: 1em;
+      
     }
 .container{
     margin: 0;

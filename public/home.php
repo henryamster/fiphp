@@ -1,8 +1,8 @@
 <!--?php require_once("../includes/functions.php");?-->
 <?php include("../includes/header.php");?>
+<?php require_once('../includes/db-connection.php');?>
 
-
-           <div class="container">
+           <div role="main" class="container">
               
               
               <div class="panel landing">
@@ -12,7 +12,7 @@
               </div>
                <div class="panel development">
                    <h2>Fresh Inventory is currently under construction.</h2>
-                   <p class="decorfont">Check back soon to see how much progress I've made!</p>
+                   <p class="customfont">Check back soon to see how much progress I've made!</p>
                </div> 
            </div>
 
