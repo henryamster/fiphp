@@ -210,6 +210,17 @@ a li:active{
     text-align:left;
 }
 
+/*viewItem styles*/
+input#search{
+    margin:0;
+    padding:0;
+    font-size:2em;
+    width:100%;
+    border-radius: 12px;
+    border:12px solid yellow;
+    
+}
+
 @media screen and (max-width: 880px){
     /*HEADER STYLES for media Q*/
    

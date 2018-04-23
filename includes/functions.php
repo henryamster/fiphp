@@ -16,26 +16,30 @@ function find_all_users(){
     confirm_query($user_set);
 }
 //find one user with name like $search string
- function find_user(search){
+ function find_user($search){
      $query = "SELECT * ";
     $query .= "FROM users ";
-     $query .= "WHERE user like " . search . " ";
+     $query .= "WHERE user like " . $search . " ";
      $user_set = mysqli_query($link, $query);
      confirm_query($user_set);
  }
 //return team members
-function find_team_members(stID){
+function find_team_members($stID){
     $query = "SELECT * ";
         $query .= "FROM users ";
-    $query .= "WHERE storeID = " . stID . " ";
+    $query .= "WHERE storeID = " . $stID . " ";
     $user_set = mysqli_query($link, $query);
     confirm_query($user_set);
 }
 
 //adduser query
-function add_user(){
-    
-}
+//function add_user(user, password, email, handle, url, storeID, pLevel){
+//    
+//    $query = "INSERT  ";
+//    $query .= "INTO users (user, password, email, handlr, url, userID storeID)"
+//    $query .= ""
+//        
+//}
 //modify use query
 function modify_user(){
     
@@ -54,12 +58,13 @@ function find_all_items(){
     confirm_query($item_set);
 }
 
- function find_item(search){
+ function find_item($search){
      $query = "SELECT *";
-    $query .= "FROM item";
-     $query .= "WHERE itemName like " . search . " ";
+    $query .= "FROM 'item' ";
+     $query .= "WHERE 'itemName' LIKE '" . $search . "' ";
      $item_set = mysqli_query($link, $query);
      confirm_query($item_set);
  }
+
 
 
