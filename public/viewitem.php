@@ -9,12 +9,12 @@
                </div> 
                
                <div class="panel" id="itemResults">
-
+                    <em>your results will appear here.</em>
                </div>
            </div>
      
 <script src="js/showItem.js"></script>
-<!--
+
 
    <?php include("../includes/footer.php");?>
     

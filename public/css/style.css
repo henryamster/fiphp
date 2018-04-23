@@ -5,6 +5,7 @@ html,
 body,
 ul,
 ol {
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
     font-size:18px;
     margin:  0;
     padding: 0;
@@ -220,6 +221,36 @@ input#search{
     border:12px solid yellow;
     
 }
+div#itemResults{
+/*    display:flex;*/
+}
+div.item:nth-of-type(even){
+   
+}
+div.item:first-of-type{
+    border-top:0;
+}
+div.item{
+    border-top: 1px solid black;
+   padding-left:20px;
+    max-height:400px;
+}
+div.item h4{
+    color:red;
+    font-size:1.6em;
+    margin:0;
+}
+div.item h5{
+    margin:0;
+    font-size:1.3em;
+}
+div.item ul{
+    list-style: none;
+    font-size:.85em;
+}
+div.item p{
+    font-size: .7em;
+}
 
 @media screen and (max-width: 880px){
     /*HEADER STYLES for media Q*/
@@ -320,4 +351,23 @@ input#search{
     .development{
         padding-left: 20px;
     }
+    
+      .landing{
+        margin-top:12px;
+    }
+    /*end of styles for homepage mediaQ */
+    
+    /*beginning of viewItemstyles*/
+    div#itemResults{
+        flex-direction: column;
+        flex: 1 0 auto;
+    }
+    div.item{
+       padding-top:10px;
+        width:100%;
+        max-width: 100%;
+        
+    }
+  
+    .
 }
