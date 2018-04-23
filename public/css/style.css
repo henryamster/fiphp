@@ -211,17 +211,40 @@ a li:active{
     text-align:left;
 }
 
-/*viewItem styles*/
-input#search{
+/*form styles*/
+
+input[type="text"]{
     margin:0;
     padding:0;
     font-size:2em;
     width:100%;
     border-radius: 12px;
-    border:12px solid yellow;
-    
+    border:8px solid yellow;  
+}
+input#bulk{
+   margin-top:12px;
+    width:36px;
+    height: 36px;
+   margin-left:auto;
+    background-color: aquamarine !important;
+
+}
+input[type="submit"]{
+    margin-top:25px;
+    display:block;
+    width:100%;
+    background: green;
+    font-size:2em;
+    border-radius: 12px;
+    color:white;
+    border: 12px solid yellow;
+}
+label{
+    font-size:1.6em;
+    margin-top:12px;
 }
 
+/*viewItem styles*/
 div#itemResults{
 /*    display:flex;*/
     padding: 2px;
@@ -239,12 +262,12 @@ div.item{
 }
 div.item h4{
     color:red;
-    font-size:1.2em;
+    font-size:1.0em;
     margin:0;
 }
 div.item h5{
     margin:0;
-    font-size:1.1em;
+    font-size:.8em;
 }
 div.item ul{
     list-style: none;

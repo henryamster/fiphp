@@ -1,1 +1,18 @@
-div
+<div class="item">
+    <h4> $row['itemName'] </h4>
+    <h5> $row['upc'] </h5>
+    <ul>
+        <li>
+            Current Price: $row['cPrice'];
+        </li>
+        <li>
+            Ad Price: $row['adPrice'];
+        </li>
+        <li>
+            Bulk: <?= ($row['bulk']) ? 'true' : 'false'; ?>
+        </li>
+        <p>
+            $row['itemDescription'];
+        </p>
+    </ul>
+</div>

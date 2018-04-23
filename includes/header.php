@@ -21,7 +21,7 @@
                         <div class="dropper">
                             <a href="#"><li>Items</li></a>
                             <div class="dropDown">
-                                <a href="#"><li >Add&nbsp;Item</li></a>
+                                <a href="../public//additem.php"><li >Add&nbsp;Item</li></a>
                                 <a href="../public/viewitem.php"><li >View&nbsp;Item</li></a>
                             </div>
                         </div>
