@@ -8,4 +8,4 @@
                 $success = mysqli_real_connect(
                         $link, $host, $user, $password, $db, $port
                 );
-                echo $success;
+               

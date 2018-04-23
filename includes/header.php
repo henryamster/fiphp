@@ -16,13 +16,13 @@
                     <ul id="mainNav">
                         <li id="logo"><a href="#">Fresh&nbsp;Inventory</a></li>
                         <span id="hideableMenu">
-                        <a href="#"><li>Home</li></a>
+                        <a href="../public/home.php"><li>Home</li></a>
                         <a href="#"><li>About</li></a>
                         <div class="dropper">
                             <a href="#"><li>Items</li></a>
                             <div class="dropDown">
                                 <a href="#"><li >Add&nbsp;Item</li></a>
-                                <a href="#"><li >View&nbsp;Item</li></a>
+                                <a href="../public/viewitem.php"><li >View&nbsp;Item</li></a>
                             </div>
                         </div>
                         <div class="dropper">

@@ -1,7 +1,5 @@
-
 <?php
-include('../includes/functions.php');
-include('../includes/db-connection.php');
+include('functions.php');
 $q = $_GET['q'];
 if (isset($q)){
                 $query = "SELECT * FROM item WHERE itemName LIKE '%" . $q . "%'";
@@ -19,7 +17,19 @@ if (isset($q)){
 // echo $result;
  confirm_query($result);
     while($row = mysqli_fetch_array($result)){
-     echo  $row['itemName'];   
+    
+        echo '<div class="item">';
+        echo "<h4>" . $row['itemName'] ." </h4>";
+        echo "<h5>" . $row['upc'] . "</h5>";
+        echo "<ul><li>";
+        echo "Current Price: " . $row['cPrice'];
+        echo "</li><li>";
+        echo "Ad Price: " . $row['adPrice'];
+        echo "</li><li>";
+        echo "Bulk: " . ($row['bulk'] ? 'yes' : 'no'); 
+        echo "</li><p>";
+        echo $row['itemDescription'];
+        echo "</p></ul></div>";
     }
 
 }

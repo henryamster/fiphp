@@ -7,9 +7,9 @@ function passSearch(){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange= function(){
         if (this.readyState == 4 && this.status == 200){
-            document.getElementById('itemResults').innerHTML = this.responseText;
+            document.getElementById('itemResults').innerHTML = this.response;
         }
     };
-    xhr.open('GET', 'search.php?q=' + query, true);
+    xhr.open('GET', '../includes/search.php?q=' + query, true);
     xhr.send();
 }

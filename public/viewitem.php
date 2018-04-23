@@ -9,7 +9,7 @@
                </div> 
                
                <div class="panel" id="itemResults">
-<!--                  <?php include('search.php'); ?>-->
+
                </div>
            </div>
      
