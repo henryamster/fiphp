@@ -66,5 +66,24 @@ function find_all_items(){
      confirm_query($item_set);
  }
 
+//fn searchRows-> return .item objects from sql query.
+function searchRows($result){
+     confirm_query($result);
+    while($row = mysqli_fetch_array($result)){
+    
+        echo '<div class="item" data-itemID="' . $row['itemID'] . '">';
+        echo "<h4>" . $row['itemName'] ." </h4>";
+        echo "<h5>" . $row['upc'] . "</h5>";
+        echo "<ul><li>";
+        echo "Current Price: " . $row['cPrice'];
+        echo "</li><li>";
+        echo "Ad Price: " . $row['adPrice'];
+        echo "</li><li>";
+        echo "Bulk: " . ($row['bulk'] ? 'yes' : 'no'); 
+        echo "</li></ul><p>";
+        echo $row['itemDescription'];
+        echo "</p></div>";
+    }
+}
 
 

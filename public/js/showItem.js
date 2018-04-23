@@ -1,6 +1,6 @@
 var search = document.getElementById('search');
+search.focus();
 search.addEventListener('keyup', passSearch);
-var searchState = 0;
 
 function passSearch(){
     var query =document.getElementById('search').value;

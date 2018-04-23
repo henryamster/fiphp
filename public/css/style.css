@@ -221,8 +221,10 @@ input#search{
     border:12px solid yellow;
     
 }
+
 div#itemResults{
 /*    display:flex;*/
+    padding: 2px;
 }
 div.item:nth-of-type(even){
    
@@ -237,19 +239,24 @@ div.item{
 }
 div.item h4{
     color:red;
-    font-size:1.6em;
+    font-size:1.2em;
     margin:0;
 }
 div.item h5{
     margin:0;
-    font-size:1.3em;
+    font-size:1.1em;
 }
 div.item ul{
     list-style: none;
-    font-size:.85em;
+    font-size:.45em;
+    text-align: right;
+    float:right; 
+    margin-right: 40px;
 }
 div.item p{
     font-size: .7em;
+    margin:10px;
+    width:400px;
 }
 
 @media screen and (max-width: 880px){
@@ -368,6 +375,13 @@ div.item p{
         max-width: 100%;
         
     }
+    div.item ul{
+    list-style: none;
+    font-size:.45em;
+    text-align:right;
+        margin-right: 40px;
+    
+}
   
     .
 }
