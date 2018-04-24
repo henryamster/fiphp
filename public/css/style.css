@@ -84,7 +84,7 @@ a li:active{
 /*div container for nav*/
 .mainNav{
     width:100vw;
-    color:green;
+    color:seagreen;
     font-size:1.2em;
 }
 /*nav ul*/
@@ -93,7 +93,7 @@ a li:active{
     display: flex;
     flex-direction: row;
     align-content: flex-end;
-    background:#105C00;
+    background:seagreen;
     height:auto;
     font-size: 18px;
     position:relative;
@@ -134,7 +134,7 @@ a li:active{
 /*hover state activation of dropDown content*/
 .dropper:hover .dropDown{
     display:flex;
-    background-color: seagreen;
+    background-color: darkseagreen;
     padding:12px;
 }
 /*hover state highlighting*/
@@ -158,7 +158,7 @@ a li:active{
 .footerContainer{
     display:flex;
     flex-direction: row;
-    background-color:#105C00;
+    background-color:seagreen;
     padding:24px;
     font-family: 'The Girl Next Door', cursive;
     color:whitesmoke;
@@ -190,7 +190,7 @@ a li:active{
 }
 .panel{
     font-family: 'Questrial', serif;
-    border: 11px solid green;
+    border: 11px solid seagreen;
     margin:20px 0 20px 0;
      padding: 12px;
     font-size: 1.6em;
@@ -226,14 +226,14 @@ input#bulk{
     width:36px;
     height: 36px;
    margin-left:auto;
-    background-color: aquamarine !important;
+
 
 }
 input[type="submit"]{
     margin-top:25px;
     display:block;
     width:100%;
-    background: green;
+    background: seagreen;
     font-size:2em;
     border-radius: 12px;
     color:white;
@@ -270,7 +270,7 @@ div.item{
     border-top: 1px solid black;
    padding-left:20px;
     max-height:400px;
-    min-height:100px;
+   
 }
 div.item h4{
     color:red;
@@ -291,6 +291,9 @@ div.item p{
     font-size: .7em;
     margin:10px;
     width:400px;
+}
+div#itemSubmission.panel{
+    margin-top:10px;
 }
 
 @media screen and (max-width: 880px){
@@ -347,10 +350,12 @@ div.item p{
 #menu:hover{
     background-color: white;
     color:black;
+    transform: rotate(90deg);
 }
 #menu:active{
     color:white;
-    background-color: black;
+    background-color: b🍐lack;
+    transform: rotate(180deg);
 }
 #hideableMenu{
     flex-direction: column;
@@ -380,7 +385,7 @@ div.item p{
     .panel{
         margin: 0 0 10px 0;
        padding: 0;
-        border:8px solid green;
+        border:8px solid seagreen;
         font-size: 1em;
       
     }

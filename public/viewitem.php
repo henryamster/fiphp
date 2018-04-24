@@ -5,6 +5,7 @@
               
               
               <div class="panel landing">
+                 <h1>View Items</h1>
                   <input type="text" name="search" id="search"></input>
                </div> 
                

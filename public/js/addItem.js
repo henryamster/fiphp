@@ -1,4 +1,5 @@
 var btn = document.getElementById('submit');
+document.getElementById('itemName').focus();
 //btn.addEventListener('click', checkForm);
 function checkForm() {
     resetBorders();
