@@ -239,6 +239,17 @@ input[type="submit"]{
     color:white;
     border: 12px solid yellow;
 }
+textarea#itemDescription{
+     margin-top:25px;
+    display:block;
+    height:4em;
+    width:100%;
+    background: white;
+    font-size:2em;
+    border-radius: 12px;
+    
+    border: 12px solid yellow;
+}
 label{
     font-size:1.6em;
     margin-top:12px;
@@ -259,6 +270,7 @@ div.item{
     border-top: 1px solid black;
    padding-left:20px;
     max-height:400px;
+    min-height:100px;
 }
 div.item h4{
     color:red;
@@ -273,7 +285,6 @@ div.item ul{
     list-style: none;
     font-size:.45em;
     text-align: right;
-    float:right; 
     margin-right: 40px;
 }
 div.item p{
